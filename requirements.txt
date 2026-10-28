@@ -1,0 +1,5 @@
+torch==2.14.1
+numpy==2.4.6
+Pillow==13.0.0
+pyserial==3.5
+

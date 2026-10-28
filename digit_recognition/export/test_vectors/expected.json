@@ -1,0 +1,62 @@
+[
+  {
+    "sample": 0,
+    "label": 7,
+    "integer_prediction": 7,
+    "display": "0007"
+  },
+  {
+    "sample": 1,
+    "label": 2,
+    "integer_prediction": 2,
+    "display": "0002"
+  },
+  {
+    "sample": 2,
+    "label": 1,
+    "integer_prediction": 1,
+    "display": "0001"
+  },
+  {
+    "sample": 3,
+    "label": 0,
+    "integer_prediction": 0,
+    "display": "0000"
+  },
+  {
+    "sample": 4,
+    "label": 4,
+    "integer_prediction": 4,
+    "display": "0004"
+  },
+  {
+    "sample": 5,
+    "label": 1,
+    "integer_prediction": 1,
+    "display": "0001"
+  },
+  {
+    "sample": 6,
+    "label": 4,
+    "integer_prediction": 4,
+    "display": "0004"
+  },
+  {
+    "sample": 7,
+    "label": 9,
+    "integer_prediction": 9,
+    "display": "9999"
+  },
+  {
+    "sample": 8,
+    "label": 5,
+    "integer_prediction": 6,
+    "display": "9999"
+  },
+  {
+    "sample": 9,
+    "label": 9,
+    "integer_prediction": 9,
+    "display": "0009"
+  }
+]

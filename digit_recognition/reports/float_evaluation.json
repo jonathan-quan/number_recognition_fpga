@@ -1,0 +1,11 @@
+{
+  "samples": 10000,
+  "correct": 9744,
+  "accuracy": 0.9744,
+  "accepted": 9553,
+  "digit_rejection_rate": 0.04469999999999996,
+  "accepted_accuracy": 0.991311629854496,
+  "min_confidence": 0.9,
+  "min_probability_margin": 0.5,
+  "note": "Original MNIST test images, no drawing crop/centering; not an unknown-input benchmark."
+}

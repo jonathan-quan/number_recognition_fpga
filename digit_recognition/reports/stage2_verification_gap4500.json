@@ -1,0 +1,33 @@
+{
+  "status": "implemented, simulated, routed, programmed and physically verified over USB-UART",
+  "original_project_files_verified_unchanged": 8,
+  "rtl_suites_passed": 4,
+  "python_transport_gui_tests_passed": 5,
+  "core_images_exact": 14,
+  "layer_outputs_exact": 2828,
+  "accumulators_exact": 2828,
+  "normalized_pixels_exact": 10976,
+  "rounding_boundary_values": 266242,
+  "uart_top_images_exact": 11,
+  "uart_top_logits_exact": 110,
+  "physical_images_exact": 14,
+  "physical_logits_exact": 140,
+  "physical_port": "COM6",
+  "baud": 115200,
+  "implementation": {
+    "luts": 1035,
+    "flip_flops": 892,
+    "dsp48e1": 1,
+    "ramb36": 34,
+    "ramb18": 2,
+    "bram_tiles": 35,
+    "clock_mhz": 100,
+    "setup_wns_ns": 0.16,
+    "hold_whs_ns": 0.06,
+    "unconstrained_internal_endpoints": 0
+  },
+  "inference_cycles": 218985,
+  "inference_ms": 2.18985,
+  "visual_physical_display_confirmation": "User confirmed that a mouse-drawn prediction in the FPGA-mode Tkinter app matches the physical seven-segment display.",
+  "bitstream_sha256": "91c73915d16085a19b3146ebea74aee5a8cfb49831d16927754aa4755141e491"
+}

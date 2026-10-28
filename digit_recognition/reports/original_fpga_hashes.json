@@ -1,0 +1,10 @@
+{
+  "C:\\Users\\ndaqu\\fpga\\fpga.xpr": "b38c0fd1e770a15a9aed2007b93f18b766b31d6711b10e3a8f152261fb21ad63",
+  "C:\\Users\\ndaqu\\fpga\\fpga.srcs\\sources_1\\new\\basys3_top.v": "0496a1154db089ead62b6556497468089ee11346e353ef255ce2a7be29ffaace",
+  "C:\\Users\\ndaqu\\fpga\\fpga.srcs\\sources_1\\new\\button_input.v": "cee14f23210529c49101ed1d778946f4c88bceae5c3f9ef947abd38bc8712f61",
+  "C:\\Users\\ndaqu\\fpga\\fpga.srcs\\sources_1\\new\\counter_core.v": "d60ab1ee2f0849a49f96ab2d863a0d6c553cb5c82e6d0741e5cf68ea2cb1bcf1",
+  "C:\\Users\\ndaqu\\fpga\\fpga.srcs\\sources_1\\new\\display_processort.v": "62cc3559d86f5f99e594588c2f023ab00e88d0afe473d225476b92c31bfd2ad7",
+  "C:\\Users\\ndaqu\\fpga\\fpga.srcs\\sources_1\\new\\processing_element.v": "9b00e89e9890fdbf5e444f75ac655b7ea47006a6189b3fd78c00a30a498963de",
+  "C:\\Users\\ndaqu\\fpga\\fpga.srcs\\sources_1\\new\\seven_segment.v": "397e33cf7770ea43fcd201848426c641e4f38b833541900ff8f76df8e5cab148",
+  "C:\\Users\\ndaqu\\fpga\\fpga.srcs\\sources_1\\new\\basys3.xdc": "923730f3882edb0ae3cf376a6acb6b468677fde3b8356a992e51673b5a44f270"
+}

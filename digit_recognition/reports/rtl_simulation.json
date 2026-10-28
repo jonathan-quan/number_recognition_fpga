@@ -1,0 +1,22 @@
+[
+  {
+    "suite": "components",
+    "passed": true,
+    "elapsed_seconds": 0.188
+  },
+  {
+    "suite": "components_115200",
+    "passed": true,
+    "elapsed_seconds": 9.343
+  },
+  {
+    "suite": "core",
+    "passed": true,
+    "elapsed_seconds": 23.454
+  },
+  {
+    "suite": "uart",
+    "passed": true,
+    "elapsed_seconds": 45.156
+  }
+]

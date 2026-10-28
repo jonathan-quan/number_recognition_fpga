@@ -1,0 +1,36 @@
+{
+  "samples": 10000,
+  "float": {
+    "samples": 10000,
+    "correct": 9744,
+    "accuracy": 0.9744,
+    "accepted": 9553,
+    "digit_rejection_rate": 0.04469999999999996,
+    "accepted_accuracy": 0.991311629854496,
+    "min_confidence": 0.9,
+    "min_probability_margin": 0.5
+  },
+  "quantized_with_gui_softmax_for_comparison": {
+    "samples": 10000,
+    "correct": 9740,
+    "accuracy": 0.974,
+    "accepted": 9558,
+    "digit_rejection_rate": 0.04420000000000002,
+    "accepted_accuracy": 0.9910023017367651,
+    "min_confidence": 0.9,
+    "min_probability_margin": 0.5
+  },
+  "float_integer_prediction_agreement": 0.9979,
+  "different_predictions": 21,
+  "hidden_saturated_values": [
+    7,
+    0
+  ],
+  "logit_mean_absolute_error": 0.10975643334824592,
+  "integer_gap_rejection": {
+    "accepted": 9077,
+    "digit_rejection_rate": 0.09230000000000005,
+    "accepted_accuracy": 0.9962542690316184
+  },
+  "note": "Unmodified MNIST test images. Not a handwriting or unknown-input validation."
+}

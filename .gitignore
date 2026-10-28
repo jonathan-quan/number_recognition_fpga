@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+digit_recognition/data/
+digit_recognition/drawings/
+fpga_ai/build/
+fpga_ai/*.log
+fpga_ai/*.jou
+.Xil/
+*.str
+

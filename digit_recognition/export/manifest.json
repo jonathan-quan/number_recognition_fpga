@@ -1,0 +1,93 @@
+{
+  "source_checkpoint": "MNIST_MLPmodel_weights.pth",
+  "source_sha256": "086f10b4a3e1a9dfb480bc73fdd6eaad76144156a1e72bc9034ade47e2865407",
+  "source_revision": "574952b057f9e9858efdcddd1404a8c105cb5d7b",
+  "format_version": 1,
+  "weight_bits": 8,
+  "bias_bits": 32,
+  "accumulator_bits": 32,
+  "input_fraction_bits": 5,
+  "layout": "address = output_neuron * inputs + input_neuron; row-major pixels y*28+x",
+  "rounding": "nearest, exact halves away from zero",
+  "hidden_saturation": [
+    0,
+    127
+  ],
+  "calibration": {
+    "split": "first unlabeled MNIST training-split images",
+    "count": 2048,
+    "hidden_float_maxima": [
+      31.655723571777344,
+      23.600994110107422
+    ],
+    "note": "Forward passes only. No training, optimizer, labels, or weight updates."
+  },
+  "layers": [
+    {
+      "inputs": 784,
+      "outputs": 128,
+      "weight_file": "fc1_weights.mem",
+      "bias_file": "fc1_biases.mem",
+      "weight_fraction_bits": 7,
+      "input_fraction_bits": 5,
+      "accumulator_fraction_bits": 12,
+      "output_fraction_bits": 2,
+      "right_shift": 10,
+      "relu": true,
+      "accumulator_absolute_bound": 557413,
+      "minimum_safe_signed_accumulator_bits": 21
+    },
+    {
+      "inputs": 128,
+      "outputs": 64,
+      "weight_file": "fc2_weights.mem",
+      "bias_file": "fc2_biases.mem",
+      "weight_fraction_bits": 8,
+      "input_fraction_bits": 2,
+      "accumulator_fraction_bits": 10,
+      "output_fraction_bits": 2,
+      "right_shift": 8,
+      "relu": true,
+      "accumulator_absolute_bound": 438180,
+      "minimum_safe_signed_accumulator_bits": 20
+    },
+    {
+      "inputs": 64,
+      "outputs": 10,
+      "weight_file": "fc3_weights.mem",
+      "bias_file": "fc3_biases.mem",
+      "weight_fraction_bits": 8,
+      "input_fraction_bits": 2,
+      "accumulator_fraction_bits": 10,
+      "output_fraction_bits": 10,
+      "right_shift": 0,
+      "relu": false,
+      "accumulator_absolute_bound": 263180,
+      "minimum_safe_signed_accumulator_bits": 20
+    }
+  ],
+  "rejection": {
+    "method": "integer_softmax_lower_bound",
+    "minimum_confidence_numerator": 9,
+    "minimum_confidence_denominator": 10,
+    "exp_lut_file": "confidence_exp.mem",
+    "exp_lut_bits": 17,
+    "exp_lut_depth": 1024,
+    "exp_scale": 65536,
+    "delta_right_shift": 4,
+    "tail_upper_bound": 1,
+    "maximum_exponential_sum": 72817,
+    "note": "Floor delta to 1/64-logit bins and ceil LUT values; acceptance conservatively implies softmax >=0.90. Blank always rejects.",
+    "previous_gap_only_threshold": 4500
+  },
+  "mem_sha256": {
+    "fc1_biases.mem": "8eac539f07e87c4526902f880aa215661359e3a5d83d6bad6491e7c15f457e6f",
+    "fc1_weights.mem": "7b7467cb10c87d6f48492382da887bbd911e60be00474e206e53e0b4770e2fe8",
+    "fc2_biases.mem": "e7a7bde4b7320505ba81ffd7ebae1729e172088754be680e4135f7b31cd55d2b",
+    "fc2_weights.mem": "150a9dcfcac1dc5a2ba737885ec840b10e0bf1d20caa16e85178c64339b9b5b1",
+    "fc3_biases.mem": "be0507e56b879f36cad122f33429a9a66934921dd43613b5b0980e626f11dafb",
+    "fc3_weights.mem": "aac66517bad3a9f2bf2dac522ebca5d1a15673f594d139604d50c5791852c587",
+    "input_lut.mem": "1ab5fa0dd88c342106d09e6261ba5f9758e8afc478dc65abb2e340b8503e2ce4",
+    "confidence_exp.mem": "62012914e41ab7b2675a74cd602445e51654cc0b3ef19400d12e4f7bc2dd052b"
+  }
+}

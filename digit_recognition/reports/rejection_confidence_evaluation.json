@@ -1,0 +1,18 @@
+{
+  "samples": 10000,
+  "weights_and_neural_arithmetic": "unchanged",
+  "old": {
+    "accepted": 9077,
+    "accepted_accuracy": 0.9962542690316184,
+    "nines_rejected": 177,
+    "nines_total": 1009
+  },
+  "new": {
+    "accepted": 9555,
+    "accepted_accuracy": 0.9909994767137624,
+    "nines_rejected": 82,
+    "nines_total": 1009,
+    "minimum_exact_softmax_among_accepted": 0.9003561481368137
+  },
+  "note": "MNIST digit-only evaluation; does not measure non-digit performance. No training or model export."
+}

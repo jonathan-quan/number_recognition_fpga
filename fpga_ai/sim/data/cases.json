@@ -1,0 +1,6 @@
+{
+  "cases": 15,
+  "golden": 10,
+  "trace_values_per_image": 202,
+  "expected_inference_cycles": 328190
+}
